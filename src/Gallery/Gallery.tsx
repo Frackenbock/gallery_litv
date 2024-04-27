@@ -28,12 +28,12 @@ export const Gallery: React.FC<GalleryProps> = ({photos,})=>{
                     prevPhoto={prevPhoto} 
                     currentPhoto={currentPhoto} 
                     nextPhoto={nextPhoto} 
-                    className={styles.divMainPhotoGallery}
+                    className={styles.divGalleryMainPhoto}
                 />
                 <Navigation
                     disabledPrev={!prevPhoto}
                     disabledNext={!nextPhoto}
-                    className={styles.divNavigationGallery}
+                    className={styles.divGalleryNavigation}
                     onPrevClick={()=>{
                         setIndexActivePhoto(indexActivePhoto - 1)
                     }}
@@ -44,7 +44,7 @@ export const Gallery: React.FC<GalleryProps> = ({photos,})=>{
             </div>
             <Preview
                 photos = {photos}
-                className={styles.divPreviewGallery}
+                className={styles.divGalleryPreview}
                 activeIndexPhoto={indexActivePhoto}
             />
         </div>
