@@ -40,9 +40,8 @@ export const Preview:React.FC<PreviewProps>=({photos,activeIndexPhoto,className}
                                 })
                             }
                         </ul>
-                    )
-                ,[])}
-                
+                     )
+                 ,[])}
                 <div className={styles.previewGalleryCover}>
                     {activeIndexPhoto+1}/{photos.length}
                 </div>
